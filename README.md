@@ -16,3 +16,4 @@ The calculator has the following core functionalities:
 - Error Handling: Displays an error message when dividing by zero and prevents calculator crashes.
 
 ## Live Preview
+[Odin Calculator](https://lloydlegaspi.github.io/odin-calculator/)
