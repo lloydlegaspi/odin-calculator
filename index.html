@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+
+        <div class="display">
+            <div class="history-value"></div>
+            <input type="text" class="display-input" value="0" disabled>
+        </div>
+
+        <div class="buttons">
+            <button class="button ac-btn" onclick="allClear()">AC</button>
+            <button class="button del-btn operator" onclick="deleteLast()">DEL</button>
+            <button class="button operator" onclick="append('%')">%</button>
+            <button class="button operator" onclick="setOperator('/')">/</button>
+
+            <button class="button" onclick="append('7')">7</button>
+            <button class="button" onclick="append('8')">8</button>
+            <button class="button" onclick="append('9')">9</button>
+            <button class="button operator" onclick="setOperator('*')">*</button>
+
+            <button class="button" onclick="append('4')">4</button>
+            <button class="button" onclick="append('5')">5</button>
+            <button class="button" onclick="append('6')">6</button>
+            <button class="button operator" onclick="setOperator('-')">-</button>
+           
+            <button class="button" onclick="append('1')">1</button>
+            <button class="button" onclick="append('2')">2</button>
+            <button class="button" onclick="append('3')">3</button>
+            <button class="button operator" onclick="setOperator('+')">+</button>
+            
+            <button class="button zero-btn" onclick="append('0')">0</button>
+            <button class="button" onclick="append('.')">.</button>
+            <button class="button operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© John Lloyd Legaspi <a href="https://github.com/lloydlegaspi"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/github.png" alt="github"/></a></p>
+</body>
+</html>
